@@ -107,14 +107,14 @@ void OpiWatch::readTcpData()
     time = new QTime();
     date = new QDate();
 
-    int i = 2;
+    int i = 1;
     QByteArray buffer;
     QString phoneNumber = 0;
     QString message = 0;
     QString currentTime = 0;
     buffer = tcpSocket->readLine();
     qDebug() << buffer;
-    if ((buffer[0] == 'n') && buffer[1] != 'e') {
+    if ((buffer[0] == 'n')) {
         while (buffer[i] != 'e')
             phoneNumber += buffer[i++];
         i++;
@@ -130,18 +130,26 @@ void OpiWatch::readTcpData()
             callInfo->hide();
             messageInfo->show();
         } else if (buffer[i] == 's') {
+            qDebug() << i;
             if (buffer[i+1] == 'i') {
                 //IDLE
+                callInfo->idleStatus();
+                messageInfo->hide();
+                callInfo->hide();
+                analogClock->show();
             } else if (buffer[i+1] == 'r') {
                 currentTime = time->currentTime().toString();
                 currentTime.append(", ");
                 currentTime.append(date->currentDate().toString());
                 callInfo->setCall(phoneNumber, currentTime);
+                callInfo->incomingStatus();
+                messageInfo->hide();
+                analogClock->hide();
+                callInfo->show();
+            } else if (buffer[i+1] == 'o'){
+                callInfo->timer->stop();
+                callInfo->ringingImage->show();
             }
-            //temp2 = buffer[i];
-            messageInfo->hide();
-            analogClock->hide();
-            callInfo->show();
         }
     }
 }

@@ -7,6 +7,9 @@ MessageInfo::MessageInfo(QWidget *parent) :
 
 {
     ui->setupUi(this);
+    smsImage = new QLabel(this);
+    smsImage->setPixmap(QPixmap("/home/odroid/work/opi_watch/images/ic_sms_96.png"));
+    smsImage->setGeometry(240, 5, 64, 64);
 }
 
 MessageInfo::~MessageInfo()

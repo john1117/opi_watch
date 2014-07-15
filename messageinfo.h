@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QTime>
+#include <QLabel>
 
 namespace Ui {
 class MessageInfo;
@@ -19,6 +20,7 @@ public:
     
 private:
     Ui::MessageInfo *ui;
+    QLabel *smsImage;
 };
 
 #endif // MESSAGEINFO_H
