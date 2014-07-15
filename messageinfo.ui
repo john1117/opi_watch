@@ -62,7 +62,7 @@
        </size>
       </property>
       <property name="text">
-       <string>4:56PM, Jul 14</string>
+       <string>07:55:56, Tue Jul 15 2014</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -78,7 +78,7 @@
        </sizepolicy>
       </property>
       <property name="text">
-       <string>From : </string>
+       <string>From       : </string>
       </property>
      </widget>
     </item>

@@ -29,9 +29,9 @@
   <widget class="QLabel" name="lRecievedTime">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>120</x>
      <y>65</y>
-     <width>100</width>
+     <width>171</width>
      <height>30</height>
     </rect>
    </property>
@@ -48,7 +48,7 @@
     </size>
    </property>
    <property name="text">
-    <string>4:56PM, Jul 14</string>
+    <string>07:56:55, Tue Jul 15 2014</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -57,7 +57,7 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>50</x>
      <y>70</y>
      <width>70</width>
      <height>19</height>
