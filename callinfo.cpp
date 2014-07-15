@@ -12,13 +12,13 @@ CallInfo::CallInfo(QWidget *parent) :
     connect(timer, SIGNAL(timeout()), this, SLOT(update()));
 
     ringingImage = new QLabel(this);
-    ringingImage->setPixmap(QPixmap("/home/odroid/work/opi_watch/images/ic_ring_96.png"));
+    ringingImage->setPixmap(QPixmap("/home/pi/opi_watch/images/ic_ring_96.png"));
     ringingImage->setGeometry(110, 90, 96, 96);
     ringingImage->hide();
     ui->lIncomingCall->hide();
 
     idleImage = new QLabel(this);
-    idleImage->setPixmap(QPixmap("/home/odroid/work/opi_watch/images/ic_end_call.png"));
+    idleImage->setPixmap(QPixmap("/home/pi/opi_watch/images/ic_end_call.png"));
     idleImage->setGeometry(110, 90, 96, 96);
 
 }
@@ -30,7 +30,8 @@ CallInfo::~CallInfo()
 
 void CallInfo::update()
 {
-    if (temp = !temp)
+    temp = !temp;
+    if (temp)
             ringingImage->show();
     else
         ringingImage->hide();
