@@ -10,6 +10,12 @@
     <height>240</height>
    </rect>
   </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
@@ -36,6 +42,9 @@
      <number>6</number>
     </property>
     <property name="bottomMargin">
+     <number>6</number>
+    </property>
+    <property name="verticalSpacing">
      <number>6</number>
     </property>
     <item row="1" column="2" colspan="2">
@@ -102,10 +111,22 @@
     <item row="2" column="1" colspan="3">
      <widget class="QTextEdit" name="message">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>289</width>
+        <height>148</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>289</width>
+        <height>148</height>
+       </size>
       </property>
       <property name="readOnly">
        <bool>true</bool>
