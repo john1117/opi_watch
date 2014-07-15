@@ -35,7 +35,6 @@ void AnalogClock::paintEvent(QPaintEvent *)
 
       int side = qMin(width(), height());
       time = QTime::currentTime();
-
       QPainter painter(this);
       painter.setRenderHint(QPainter::Antialiasing);
       painter.translate(width() / 2, height() / 2);
@@ -70,20 +69,13 @@ void AnalogClock::paintEvent(QPaintEvent *)
                 painter.drawLine(92, 0, 96, 0);
             painter.rotate(6.0);
         }
+       painter.drawLine(-2, -96, -2, -88);
+       painter.drawLine(2, -96, 2, -88);
+       painter.setPen(Qt::NoPen);
+       painter.setBrush(secondColor);
 
-        painter.setPen(Qt::NoPen);
-        painter.setBrush(secondColor);
-
-        painter.save();
-        painter.rotate(6.0 * time.second());
-        painter.drawConvexPolygon(secondHand, 3);
-        painter.restore();
-
-        painter.setPen(secondColor);
-        for (int k = 0; k < 60; k++) {
-             if ((k % 5) != 0)
-                 painter.drawLine(96, 0, 96, 0);
-             painter.rotate(6.0);
-         }
-
+       painter.save();
+       painter.rotate(6.0 * time.second());
+       painter.drawConvexPolygon(secondHand, 3);
+       painter.restore();
 }

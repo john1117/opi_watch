@@ -25,13 +25,6 @@ OpiWatch::OpiWatch(QWidget *parent) :
             this, SLOT(acceptConnection()));
     tcpServer->listen(QHostAddress::Any, 8080);
 
-    //smsButton = new QPushButton(analogClock);
-//    callButton = new QPushButton(analogClock);
-//    batteryButton = new QPushButton(analogClock);
-//    signalButton = new QPushButton(analogClock);
-
-//    Pixmap pixmap("/home/odroid/work/qt4/opi_watch/images/ic_sms.png");
-
     lBattery = new QLabel(analogClock);
     lBattery->setPixmap(QPixmap("/home/odroid/work/qt4/opi_watch/images/ic_battery.png"));
     lBattery->setGeometry(0, 0, 48, 48);
@@ -52,16 +45,6 @@ OpiWatch::OpiWatch(QWidget *parent) :
     lCall = new QLabel(analogClock);
     lCall->setPixmap(QPixmap("/home/odroid/work/qt4/opi_watch/images/ic_call.png"));
     lCall->setGeometry(272, 192, 48, 48);
-    //mylael->show();
-    //smsButton->setIcon(ButtonIcon);
-    //smsButton->setIconSize(pixmap.rect().size());
-
-    //smsButton->setGeometry(0, 0, 40, 38);
-//    callButton->setGeometry(272,0, 48, 48);
-//    batteryButton->setGeometry(0, 192, 48, 48);
-//    signalButton->setGeometry(272, 192, 48, 48);
-//    //smsButton->setVisible(1);
-//    callButton->setVisible(1);
 
     fw = new QFileSystemWatcher(this);
     fw->addPath("/home/odroid/work/qt4/opi_watch/test.txt");
