@@ -4,6 +4,7 @@
 MessageInfo::MessageInfo(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::MessageInfo)
+
 {
     ui->setupUi(this);
 }
@@ -13,10 +14,9 @@ MessageInfo::~MessageInfo()
     delete ui;
 }
 
-void MessageInfo::setSMS(QString pNumber, QString smsMessage, QTime time)
+void MessageInfo::setSMS(QString pNumber, QString smsMessage, QString recievedTime)
 {
-    ui->phoneNumber->setText(pNumber);
+    ui->lPhoneNumber->setText(pNumber);
     ui->message->setText(smsMessage);
-    ui->lRecievedTime->setText("hello");
-
+    ui->lRecievedTime->setText(recievedTime);
 }

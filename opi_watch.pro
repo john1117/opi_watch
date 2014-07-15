@@ -15,11 +15,14 @@ TEMPLATE = app
 SOURCES += main.cpp\
         opiwatch.cpp \
     analogclock.cpp \
-    messageinfo.cpp
+    messageinfo.cpp \
+    callinfo.cpp
 
 HEADERS  += opiwatch.h \
     analogclock.h \
-    messageinfo.h
+    messageinfo.h \
+    callinfo.h
 
 FORMS    += \
-    messageinfo.ui
+    messageinfo.ui \
+    callinfo.ui

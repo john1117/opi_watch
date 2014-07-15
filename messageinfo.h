@@ -15,7 +15,7 @@ class MessageInfo : public QWidget
 public:
     explicit MessageInfo(QWidget *parent = 0);
     ~MessageInfo();
-    void setSMS(QString pNumber, QString smsMessage, QTime time);
+    void setSMS(QString pNumber, QString smsMessage, QString recievedTime);
     
 private:
     Ui::MessageInfo *ui;
