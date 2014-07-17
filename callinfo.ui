@@ -48,7 +48,7 @@
     </size>
    </property>
    <property name="text">
-    <string>07:56:55, Tue Jul 15 2014</string>
+    <string/>
    </property>
    <property name="alignment">
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -89,7 +89,7 @@
     </sizepolicy>
    </property>
    <property name="text">
-    <string>010-6293-1117</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="label">
