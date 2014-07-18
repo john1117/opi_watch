@@ -19,13 +19,16 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QWidget" name="gridLayoutWidget">
    <property name="geometry">
     <rect>
      <x>9</x>
-     <y>9</y>
+     <y>10</y>
      <width>301</width>
-     <height>221</height>
+     <height>224</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="SMSLayout">
@@ -61,6 +64,14 @@
         <height>30</height>
        </size>
       </property>
+      <property name="font">
+       <font>
+        <family>Droid Sans [unknown]</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="text">
        <string/>
       </property>
@@ -89,6 +100,14 @@
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Droid Sans [unknown]</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
       </property>
       <property name="text">
        <string/>
@@ -127,6 +146,14 @@
         <width>289</width>
         <height>148</height>
        </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Droid Sans [unknown]</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
       </property>
       <property name="readOnly">
        <bool>true</bool>
