@@ -64,7 +64,7 @@
     </font>
    </property>
    <property name="text">
-    <string>010293802183890124</string>
+    <string/>
    </property>
    <property name="alignment">
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -121,7 +121,7 @@
     </font>
    </property>
    <property name="text">
-    <string>01087118983</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="label">
